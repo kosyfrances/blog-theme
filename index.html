@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+  <link href="normalize.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <title>Kosy's Blog</title>
+  <style>
+    header {
+      text-align: center;
+      background: url("backgroundpic.jpg");
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border-radius: 100px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        display: block;
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="kosi.jpg">
+    <h1>Kosy's Blog</h1>
+    <ul>
+      <li><a href="#">About me</a></li>
+      <li><a href="#">Best moments</a></li>
+      <li><a href="#">Worst moments</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Missing plane again</h2>
+    <p>It is surprising how planes disappear and become history. What really happens to the passengers and crew? Are they dead or alive? Are they trapped somewhere waiting for rescue?</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>What people say</h2>
+    <p>People say maybe the planes crash in unknown islands and they die. What do you think?</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Everything has changed</h2>
+    <p>I think everything has changed. I really do not know which mode of transportation to go with. Maybe I will just walk to the UK from Nigeria...lol...</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function(){
+      alert("You clicked the LIKE button!");
+    });
+  </script>
+</body>
